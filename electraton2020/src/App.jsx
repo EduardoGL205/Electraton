@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./styles/global.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Gallery from "./pages/Gallery";
@@ -14,7 +13,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/admins" element={<Admins />} />
-        <Route path="/admin-dashboard" element={<AdminDashboard />} />
+        <Route path="/AdminDashboard" element={<AdminDashboard />} />
       </Routes>
     </Router>
   );
