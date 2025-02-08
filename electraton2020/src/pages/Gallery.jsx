@@ -2,11 +2,21 @@ import { Link } from "react-router-dom";
 import "../styles/global.css";
 
 const Gallery = () => {
-  // Lista de imágenes referenciadas desde la carpeta public/assets/gallery
   const images = [
     "/assets/gallery/1.jpg",
     "/assets/gallery/2.jpeg",
     "/assets/gallery/3.jpeg",
+    "/assets/gallery/4.JPG",
+    "/assets/gallery/5.JPG",
+    "/assets/gallery/6.JPG",
+    "/assets/gallery/7.JPG",
+    "/assets/gallery/8.JPG",
+    "/assets/gallery/9.JPG",
+    "/assets/gallery/10.JPG",
+    "/assets/gallery/11.JPG",
+    "/assets/gallery/12.JPG",
+    "/assets/gallery/13.JPG",
+    "/assets/gallery/14.JPG",
   ];
 
   return (
