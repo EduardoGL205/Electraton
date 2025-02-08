@@ -2,14 +2,12 @@ import { Link } from "react-router-dom";
 import "../styles/global.css";
 
 const Gallery = () => {
-
-    const importAllImages = (r) => {
-    return r.keys().map(r);
-  };
-
-  const images = importAllImages(
-    require.context("/public/assets/gallery", false, /\.(png|jpe?g|svg)$/)
-  );
+  // Lista de imágenes referenciadas desde la carpeta public/assets/gallery
+  const images = [
+    "/assets/gallery/1.jpg",
+    "/assets/gallery/2.jpeg",
+    "/assets/gallery/3.jpeg",
+  ];
 
   return (
     <div className="gallery-page">
@@ -29,11 +27,15 @@ const Gallery = () => {
         <h2>Nuestra Galería</h2>
         <p>Explora algunos de los mejores momentos de la Escudería Borregos CCM.</p>
         <div className="gallery-grid">
-          {images.map((image, index) => (
-            <div key={index} className="gallery-item">
-              <img src={image} alt={`Foto ${index + 1}`} />
-            </div>
-          ))}
+          {images.length > 0 ? (
+            images.map((image, index) => (
+              <div key={index} className="gallery-item">
+                <img src={image} alt={`Foto ${index + 1}`} />
+              </div>
+            ))
+          ) : (
+            <p>No hay imágenes disponibles en la galería.</p>
+          )}
         </div>
       </main>
     </div>
