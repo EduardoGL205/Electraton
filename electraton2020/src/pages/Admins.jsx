@@ -22,7 +22,7 @@ const Admins = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     if (credentials.username === adminUser && credentials.password === adminPassword) {
-      navigate("/admin-dashboard"); // Redirigir al panel de administración si las credenciales son correctas
+      navigate("/admin-dashboard"); 
     } else {
       setError("Usuario o contraseña incorrectos.");
     }
