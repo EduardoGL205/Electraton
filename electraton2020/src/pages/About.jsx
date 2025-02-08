@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/global.css";
 
 const About = () => {
@@ -8,10 +9,10 @@ const About = () => {
           <h1>Escudería Borregos CCM</h1>
         </div>
         <nav className="navbar">
-          <a href="/">Inicio</a>
-          <a href="#about">Quiénes Somos</a>
-          <a href="#gallery">Galería</a>
-          <a href="#sponsors">Patrocinadores</a>
+          <Link to="/">Inicio</Link>
+          <Link to="/about">Quiénes Somos</Link>
+          <Link to="/gallery">Galería</Link>
+          <Link to="#sponsors">Patrocinadores</Link>
         </nav>
       </header>
 
