@@ -1,25 +1,63 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/global.css";
 
 const Admins = () => {
+  const navigate = useNavigate();
+
+
+  const [credentials, setCredentials] = useState({ username: "", password: "" });
+  const [error, setError] = useState("");
+
+
+  const adminUser = "BorregosCCM2019";
+  const adminPassword = "ElectratonBorregos";
+
+
+  const handleChange = (e) => {
+    setCredentials({ ...credentials, [e.target.name]: e.target.value });
+  };
+
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    if (credentials.username === adminUser && credentials.password === adminPassword) {
+      navigate("/admin-dashboard"); // Redirigir al panel de administración si las credenciales son correctas
+    } else {
+      setError("Usuario o contraseña incorrectos.");
+    }
+  };
+
   return (
-    <div className="admins-page">
+    <div className="login-page">
       <header className="header">
         <div className="logo">
           <h1>Escudería Borregos CCM</h1>
         </div>
-        <nav className="navbar">
-          <Link to="/">Inicio</Link>
-          <Link to="/about">Quiénes Somos</Link>
-          <Link to="/gallery">Galería</Link>
-          <Link to="/sponsors">Patrocinadores</Link>
-          <Link to="/admins">Admins</Link>
-        </nav>
       </header>
 
-      <main className="main-content">
-        <h2>Administradores</h2>
-        <p>Aquí se pueden gestionar las configuraciones y funciones administrativas del sistema.</p>
+      <main className="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form onSubmit={handleLogin}>
+          <input
+            type="text"
+            name="username"
+            placeholder="Usuario"
+            value={credentials.username}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Contraseña"
+            value={credentials.password}
+            onChange={handleChange}
+            required
+          />
+          <button type="submit">Ingresar</button>
+          {error && <p className="error-message">{error}</p>}
+        </form>
       </main>
     </div>
   );
