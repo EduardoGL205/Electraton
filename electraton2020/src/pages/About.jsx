@@ -19,9 +19,16 @@ const About = () => {
         <section className="about-section">
           <h2>Quiénes Somos</h2>
           <p>
-            La Escudería Borregos CCM es un equipo apasionado por el automovilismo y la innovación tecnológica. Nos
-            dedicamos a diseñar, construir y competir con vehículos eléctricos de alto rendimiento, promoviendo el
-            aprendizaje práctico y el trabajo en equipo.
+            Somos un equipo multidisciplinario compuesto por estudiantes de diversas carreras y semestres, unidos por la
+            pasión por el automovilismo, la tecnología y la innovación. La Escudería Borregos CCM reúne talentos de
+            áreas como ingeniería mecánica, ingeniería electrónica, diseño industrial, mercadotecnia y administración,
+            entre otras.
+          </p>
+          <p>
+            Cada miembro del equipo aporta habilidades únicas que contribuyen al diseño, construcción y competición de
+            nuestros vehículos eléctricos de alto rendimiento. Nuestra diversidad nos permite enfrentar los desafíos con
+            creatividad, trabajo en equipo y un enfoque integral, fortaleciendo nuestro compromiso con la excelencia y
+            la sostenibilidad.
           </p>
         </section>
 
