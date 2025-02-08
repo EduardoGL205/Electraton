@@ -19,6 +19,7 @@ const AdminDashboard = () => {
       city: "Monterrey",
       car: "Borregos EV-2019",
       track: "Autódromo Monterrey",
+      trackImage: "/assets/tracks/monterrey.jpg",
     },
     "15 Marzo 2019": {
       realTimeData: "Velocidad actual: 110 km/h",
@@ -31,6 +32,7 @@ const AdminDashboard = () => {
       city: "CDMX",
       car: "Borregos EV-2019",
       track: "Hermanos Rodríguez",
+      trackImage: "/assets/tracks/cdmx.jpg",
     },
     "20 Abril 2019": {
       realTimeData: "Velocidad actual: 130 km/h",
@@ -43,6 +45,7 @@ const AdminDashboard = () => {
       city: "León",
       car: "Borregos EV-2019",
       track: "Autódromo León",
+      trackImage: "/assets/tracks/leon.jpg",
     },
     "5 Mayo 2019": {
       realTimeData: "Velocidad actual: 100 km/h",
@@ -55,6 +58,7 @@ const AdminDashboard = () => {
       city: "Toluca",
       car: "Borregos EV-2019",
       track: "Autódromo Toluca",
+      trackImage: "/assets/tracks/toluca.jpg",
     },
   };
 
@@ -69,6 +73,7 @@ const AdminDashboard = () => {
     city: "N/A",
     car: "N/A",
     track: "N/A",
+    trackImage: "/assets/tracks/default.jpg",
   };
 
   return (
@@ -127,6 +132,11 @@ const AdminDashboard = () => {
             <p>Auto: {data.car}</p>
             <p>Pista: {data.track}</p>
           </div>
+        </div>
+
+        <div className="track-image-container">
+          <h3>Imagen de la Pista</h3>
+          <img src={data.trackImage} alt={`Imagen de ${data.track}`} className="track-image" />
         </div>
       </main>
     </div>
