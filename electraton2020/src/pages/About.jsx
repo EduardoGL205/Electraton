@@ -1,4 +1,5 @@
 import "../styles/global.css";
+
 const About = () => {
   return (
     <div className="about-page">
@@ -25,18 +26,22 @@ const About = () => {
         </section>
 
         <section className="highlight-section">
-          <h3>¿Qué es Formula Student?</h3>
+          <h3>Mexico's Prime Electric-Car Championship</h3>
           <p>
-            Formula Student (FS) es la competencia educativa más destacada de automovilismo, diseñada para inspirar y
-            desarrollar a jóvenes ingenieros innovadores. Universidades de todo el mundo participan para diseñar y
-            construir autos de carreras eléctricos de un solo asiento y competir en eventos estáticos y dinámicos.
+            Desde 1995 inició una carrera al futuro, en el que la inventiva y creatividad convergieron en un proyecto
+            que hoy sigue siendo el único serial de carreras de autos eléctricos en México. Donde los autos son
+            diseñados, construidos y competidos por escuderías tanto universitarias como privadas.
           </p>
-          <div className="image-container">
-            <img
-              src="https://via.placeholder.com/800x400"
-              alt="Equipo compitiendo"
-            />
-          </div>
+          <p>
+            Nosotros, como Escudería Borregos CCM, tenemos el honor de participar activamente en este campeonato,
+            demostrando nuestro compromiso, esfuerzo y habilidades en cada competencia. Nos preparamos para participar
+            en 5 carreras al año, en las que competimos en circuitos de velocidad que van desde 400 hasta 800 metros, en
+            ciudades como Monterrey, Toluca, Cuautla, León y CDMX.
+          </p>
+          <p>
+            Cada carrera es una oportunidad para mostrar el talento de nuestro equipo y nuestra pasión por el desarrollo
+            de tecnologías limpias y sostenibles. ¡Conócenos y apóyanos en esta emocionante aventura!
+          </p>
         </section>
       </main>
     </div>
