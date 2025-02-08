@@ -144,3 +144,38 @@ const AdminDashboard = () => {
 };
 
 export default AdminDashboard;
+
+// const mysql = require('mysql2/promise');
+
+// (async () => {
+//   try {
+//     const connection = await mysql.createConnection({
+//       host: '10.10.1.15',
+//       user: 'admin_escuderia',
+//       password: 'B0rr3g05_CCM!',
+//       database: 'escuderia_borregos'
+//     });
+
+//     const [rows] = await connection.query('SELECT velocidad_max, velocidad_min, velocidad_prom, bateria, vueltas, ciudad, clima, auto, pista, imagen_pista FROM carreras WHERE fecha = ?', ['2019-02-10']);
+
+//     const data = rows[0];
+
+//     console.log({
+//       realTimeData: `Velocidad actual: ${data.velocidad_max - 10} km/h`,
+//       maxSpeed: `${data.velocidad_max} km/h`,
+//       minSpeed: `${data.velocidad_min} km/h`,
+//       avgSpeed: `${data.velocidad_prom} km/h`,
+//       battery: `${data.bateria}%`,
+//       laps: `${data.vueltas} vueltas`,
+//       city: data.ciudad,
+//       weather: data.clima,
+//       car: data.auto,
+//       track: data.pista,
+//       trackImage: data.imagen_pista
+//     });
+
+//     await connection.end();
+//   } catch (error) {
+//     console.error('Error:', error.message);
+//   }
+// })();
