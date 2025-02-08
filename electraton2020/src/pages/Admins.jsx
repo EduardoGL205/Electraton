@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import Form from "../components/Form";
+import "../styles/global.css";
 
-const Home = () => {
+const Admins = () => {
   return (
-    <div>
+    <div className="admins-page">
       <header className="header">
         <div className="logo">
           <h1>Escudería Borregos CCM</h1>
@@ -12,15 +12,17 @@ const Home = () => {
           <Link to="/">Inicio</Link>
           <Link to="/about">Quiénes Somos</Link>
           <Link to="/gallery">Galería</Link>
-          <Link to="#sponsors">Patrocinadores</Link>
+          <Link to="/sponsors">Patrocinadores</Link>
           <Link to="/admins">Admins</Link>
         </nav>
       </header>
-      <h1>🚗 ¡Somos la Escudería Borregos CCM!</h1>
-      <p>¿Quieres unirte al equipo? Rellena el formulario y nos contactaremos contigo vía correo institucional.</p>
-      <Form />
+
+      <main className="main-content">
+        <h2>Administradores</h2>
+        <p>Aquí se pueden gestionar las configuraciones y funciones administrativas del sistema.</p>
+      </main>
     </div>
   );
 };
 
-export default Home;
+export default Admins;

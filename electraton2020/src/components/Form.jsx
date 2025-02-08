@@ -24,13 +24,13 @@ const Form = () => {
       await axios.post("http://localhost:5000/api/postulacion", formData);
       navigate("/about");
     } catch (error) {
-      console.error("Error al enviar la postulación", error);
+      console.error("Error al enviar el registro", error);
     }
   };
 
   return (
     <div className="form-container">
-      <h2>Formulario de Postulación</h2>
+      <h2>Formulario de Registro</h2>
       <form onSubmit={handleSubmit}>
         <input type="text" name="nombre" placeholder="Nombre completo" value={formData.nombre} onChange={handleChange} required />
         <input type="text" name="semestre" placeholder="Semestre" value={formData.semestre} onChange={handleChange} required />

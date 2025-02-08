@@ -3,6 +3,7 @@ import "./styles/global.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Gallery from "./pages/Gallery";
+import Admins from "./pages/Admins";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/admins" element={<Admins />} />
       </Routes>
     </Router>
   );

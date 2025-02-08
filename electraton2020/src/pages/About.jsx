@@ -4,17 +4,19 @@ import "../styles/global.css";
 const About = () => {
   return (
     <div className="about-page">
-      <header className="header">
-        <div className="logo">
-          <h1>Escudería Borregos CCM</h1>
-        </div>
-        <nav className="navbar">
-          <Link to="/">Inicio</Link>
-          <Link to="/about">Quiénes Somos</Link>
-          <Link to="/gallery">Galería</Link>
-          <Link to="#sponsors">Patrocinadores</Link>
-        </nav>
-      </header>
+    <header className="header">
+      <div className="logo">
+        <h1>Escudería Borregos CCM</h1>
+      </div>
+      <nav className="navbar">
+        <Link to="/">Inicio</Link>
+        <Link to="/about">Quiénes Somos</Link>
+        <Link to="/gallery">Galería</Link>
+        <Link to="/sponsors">Patrocinadores</Link>
+        <Link to="/admins">Admins</Link>
+      </nav>
+    </header>
+
 
       <main className="main-content">
         <section className="about-section">

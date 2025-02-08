@@ -30,6 +30,7 @@ const Gallery = () => {
           <Link to="/about">Quiénes Somos</Link>
           <Link to="/gallery">Galería</Link>
           <Link to="#sponsors">Patrocinadores</Link>
+          <Link to="/admins">Admins</Link>
         </nav>
       </header>
 
